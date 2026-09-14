@@ -1,0 +1,25 @@
+[project]
+name = "introvertsfromtheextroverts"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Fernando Borquez", email = "fernandoborquez215@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "catppuccin>=2.5.0",
+    "catppuccin-matplotlib>=0.5",
+    "matplotlib<3.9",
+    "numpy>=2.5.3",
+    "pandas>=3.0.5",
+    "scipy>=1.18.1",
+    "seaborn>=0.13.2",
+]
+
+[project.scripts]
+introvertsfromtheextroverts = "introvertsfromtheextroverts:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
